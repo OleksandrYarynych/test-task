@@ -1,0 +1,41 @@
+.character-wrapper {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(238, 238, 238);
+
+  div {
+    text-align: center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  &:hover {
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+  }
+}
+
+.character-wrapper-dark-mode {
+  background-color: #444;
+
+  &:hover {
+    background-color: #444;
+    cursor: pointer;
+  }
+}
+
+.img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.character-wrapper__text {
+  font-size: 16px;
+}

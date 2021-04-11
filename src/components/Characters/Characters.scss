@@ -1,0 +1,79 @@
+.characters-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.characters-nav {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 0 auto;
+}
+
+.page-text {
+  font-size: 20px;
+}
+
+.arrow-btn {
+  border: none;
+  cursor: pointer;
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0 5px;
+}
+
+.MuiSelect-select.MuiSelect-select {
+  width: 100px;
+}
+
+.select {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  width: 300px;
+}
+
+.select-dark-mode {
+  background-color: #aaaaaa;
+}
+
+.btn {
+  padding: 12px 32px;
+  margin: auto 0;
+  border: 2px solid #5731fd;
+  border-radius: 10px;
+  background-color: #5731fd;
+  color: #ffffff;
+  cursor: pointer;
+  transition-duration: 0.7s;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #000;
+    transition-duration: 0.7s;
+  }
+}
+
+.character-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  max-width: 700px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.j-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.m-bottom {
+  margin-bottom: 5px;
+}
