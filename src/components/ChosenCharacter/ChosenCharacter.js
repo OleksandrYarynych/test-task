@@ -10,11 +10,13 @@ import "./ChosenCharacter.scss";
 const ChosenCharacter = () => {
   const { chosenId } = useParams();
   const { fetchSingleCharacter, changeTheme } = useActions();
+
   useEffect(() => {
     const id = chosenId.slice(1);
     fetchSingleCharacter(id);
     changeTheme(getThemeFromLocalStorage());
   }, []);
+
   const chosenCharacter = useSelector(
     (state) => state.characters.singleCharacter
   );
@@ -41,7 +43,11 @@ const ChosenCharacter = () => {
         }
       >
         <div className="single-character-header">
-          <img className="single-character-img" src={chosenCharacter.image} />
+          <img
+            className="single-character-img"
+            src={chosenCharacter.image}
+            alt={`Here is a photo of ${chosenCharacter.name}`}
+          />
           <span className="single-character-name">{chosenCharacter.name}</span>
         </div>
         <div className="single-character-info">

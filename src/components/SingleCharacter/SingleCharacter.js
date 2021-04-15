@@ -16,7 +16,7 @@ const SingleCharacter = ({character}) => {
 					: "character-wrapper character-wrapper-dark-mode color-white"
 			}
 		>
-			<img className="img" src={image}/>
+			<img className="img" src={image} alt={`This is gerowhich names ${name}`}/>
 			<span className="character-wrapper__text">{status}</span>
 			<span className="character-wrapper__text">{name}</span>
 			<div>

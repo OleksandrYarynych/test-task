@@ -16,7 +16,7 @@ const CharacterItem = (props) => {
 					: "character-wrapper character-wrapper-dark-mode color-white"
 			}
 		>
-			<img className="img" src={character.img}/>
+			<img className="img" src={character.img} alt={`This is photo of ${character.name}`}/>
 			<span className="character-wrapper__text">{character.name}</span>
 			<span className="character-wrapper__text">{character.email}</span>
 			<span className="character-wrapper__text">{character.gender}</span>

@@ -5,12 +5,10 @@ import Nav from "./components/Nav/Nav";
 import ChosenCharacter from "./components/ChosenCharacter/ChosenCharacter";
 
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 import "./App.css";
 
 function App() {
-  const theme = useSelector((state) => state.theme.theme);
   return (
     <div>
       <Router>

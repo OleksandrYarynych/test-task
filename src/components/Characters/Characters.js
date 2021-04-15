@@ -117,7 +117,7 @@ const Characters = () => {
 				)}
 			</div>
 			<div className="characters-nav">
-				{page == 1 ? null : (
+				{page === 1 ? null : (
 					<button
 						className="arrow-btn"
 						onClick={() => {
@@ -133,7 +133,7 @@ const Characters = () => {
 				>
           {page}
         </span>
-				{page == 32 ? null : (
+				{page === 32 ? null : (
 					<button
 						className="arrow-btn"
 						onClick={() => {
